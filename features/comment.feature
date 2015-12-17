@@ -8,10 +8,10 @@ Feature: Comment on a post
 		
 	@comment
 	Scenario:should be able to see all the comments and authors
-		When I click on a post 
+		When I view the comments page
 		Then I should see all the comments and authors names
 		
 	@comment
 	Scenario:Comments should be ordered at the top by oldest
-		When I read the comments
-		then the comments should be oldest at the top
+		When I read the comments dates
+		Then the comments should be oldest at the top
